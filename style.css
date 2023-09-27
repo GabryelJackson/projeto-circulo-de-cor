@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+:root {
+    --fonte-padrao: 'ADLaM Display', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    height: 100vh;
+    color: #fcfcfc;
+    background-color: rgb(255, 255, 255);
+    animation-name: colorchange;
+    animation-duration: 44s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorchange {
+    0%{background-color: #880606;}
+    10%{background-color: #d53d0c;}
+    20%{background-color: #ff8207;}
+    30%{background-color: #231d1e;}
+    40%{background-color: #fcfcfc;}
+    50%{background-color: #368986;}
+    60%{background-color: #e79a32;}
+    70%{background-color: #f84339;}
+    80%{background-color: #d40f60;}
+    90%{background-color: #005c81;}
+    100%{background-color: #ed7b83;}
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container h1 {
+    font-size: 5rem;
+}
+
+.container2 {
+    margin-top: 550px;
+    text-align: center;
+}
+
+.container2 input {
+    background: none;
+    border: none;
+    width: 50px;
+    height: 50px;
+}
